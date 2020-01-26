@@ -58,7 +58,7 @@ public class activity_1 extends AppCompatActivity {
                     num_1 = Integer.parseInt(num1.getText().toString());
                     num_2 = Integer.parseInt(num2.getText().toString());
                     ans_int = Integer.parseInt(answer.getText().toString());
-                    if((num_1 * num_2) == ans_int){
+                    if(answer.getText().toString() != "" && (num_1 * num_2) == ans_int){
                         title.setText("Bingo");
                         updateScore(false);
                         setNum();
@@ -92,5 +92,6 @@ public class activity_1 extends AppCompatActivity {
         else
             score_int += 2;
             score.setText(""+score_int);
+
     }
 }

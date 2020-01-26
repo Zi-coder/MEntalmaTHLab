@@ -10,6 +10,8 @@ import android.widget.Button;
 public class HomeActivity extends AppCompatActivity {
     Button act_1;
     Button act_2;
+    static int highScore3_1 = 0;
+    static int highScore2_2 = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
